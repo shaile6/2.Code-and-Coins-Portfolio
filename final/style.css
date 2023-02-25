@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #c8a2c8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 20px 20px;
+}
+
+nav {
+  display: block;
+  margin: 10px;
+}
+
+header {
+  display: inline;
+  padding-top: 20px;
+}
+
+h1 {
+  color: purple;
+
+  display: inline;
+  font-size: 46px;
+  /* margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  float: right;
+  font-size: 20px;
+  margin-inline-end: 40px;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+
+img {
+  width: 350px;
+  height: 235px;
+  margin: 20px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+img:hover {
+  opacity: 0.6;
+}
+
+.presentation {
+  display: block;
+}
+.hero-banner {
+  text-align: right;
+  background-color: pink;
+  color: blueviolet;
+  opacity: 0.5;
+  margin-inline-end: 40px;
+
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "page-section-about" "page-section-work" "page-section-contact";
+}
+
+.page-section-about {
+  grid-area: page-section-about;
+}
+
+.description {
+  margin: auto;
+}
+
+.page-section-work {
+  grid-area: page-section-work;
+}
+
+.text {
+  margin: 20px;
+}
+
+.page-section-contact {
+  grid-area: page-section-contact;
+}
+
+.contact-details {
+  display: inline;
+
+  padding: 40px 40px;
+  margin: 20px 20px;
+  word-spacing: 100px;
+}
